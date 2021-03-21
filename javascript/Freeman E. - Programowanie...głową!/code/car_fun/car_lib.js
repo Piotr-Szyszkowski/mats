@@ -6,6 +6,7 @@ const fiat = {
     passengers: 2,
     convertible: false,
     mileage: 88000,
+    fuel: 0,
     started: false,
     start: function() {
       this.started = true;
@@ -30,6 +31,7 @@ const fiat = {
     passengers: 5,
     convertible: true,
     mileage: 999999,
+    fuel: 0,
     started: false,
     start: function() {
       this.started = true;
