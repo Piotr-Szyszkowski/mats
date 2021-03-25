@@ -15,10 +15,15 @@ const fiat = {
       this.started = false;
     },
     drive: function() {
-      if (this.started) {
-        console.log("Zoom zoom!");
+      if (this.fuel <= 0) {
+        console.log("Gimme fuel, gimme fire!!");
       } else {
-        console.log("You need to start the engine first.");
+        if (this.started) {
+          console.log("Zoom zoom!");
+          this.fuel--
+        } else {
+          console.log("You need to start the engine first.");
+        }
       }
     }
   };

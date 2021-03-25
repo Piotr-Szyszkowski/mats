@@ -16,8 +16,13 @@ function checkFuel(car) {
     console.log(`${carLib[car].make} ${carLib[car].model} has ${carLib[car].fuel} litres of fuel`);
 };
 
-checkFuel("mercedes");
-refuel("mercedes", 15);
-checkFuel("mercedes");
-
+checkFuel("fiat");
+carLib.fiat.drive();
+refuel("fiat", 15);
+checkFuel("fiat");
+carLib.fiat.drive();
+carLib.fiat.start();
+checkFuel("fiat");
+carLib.fiat.drive();
+checkFuel("fiat");
 
